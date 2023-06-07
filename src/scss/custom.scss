@@ -1,0 +1,435 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway&display=swap');
+
+// Variables
+:root {
+    --bs-font-serif:'Merriweather', serif; 
+    --bs-body-font-family: var(--bs-font-serif);
+    --yellow: #c9b267;
+    --gold-gr: #F3E0A2;
+    --golden: #A68B30;
+    --blue: #023757;
+    --blue-gr: #1C2C3F;
+    --darkblue: #151E2A;
+    --white-gr: #FFFFFF;
+    --grey-gr: #D3D2D9;
+}
+
+main {
+    background-color: var(--darkblue);
+    padding: 30px 0 0 0;
+}
+
+// Margins and padding
+.body-padding {
+    padding: 0 30px;
+}
+
+.section-padding {
+    padding-top: 15px;
+}
+
+.padding-b {
+    padding-bottom: 30px;
+}
+
+.padding15 {
+    padding: 15px 0;
+}
+
+.margin-classic {
+    margin: 0 15px;
+}
+
+.margin-bigger {
+    margin-left: 30px;
+}
+
+.margin-t-b {
+    margin: 50px 0;
+}
+
+.margin-b {
+    margin-bottom: 8px;
+}
+
+.margin-b-15 {
+    margin-bottom: 15px;
+}
+
+.margin-t {
+    margin-top: 8px;
+}
+
+// Typography
+.text-bold {
+    font-weight: 600;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.heading-white {
+    color: white;
+}
+
+
+.heading-yellow {
+    color: var(--yellow);
+}
+
+.heading-golden {
+    color: var(--golden);
+}
+
+.h1-gold {
+    color: var(--golden);
+    padding-right: 10px;
+}
+
+.h1-white-left {
+    color: white;
+    margin-left: 30px;
+}
+
+.h1-white {
+    color: white;
+}
+
+.h2-golden-underline {
+    border-bottom: 1px solid var(--golden);
+    margin-bottom: 15px;
+}
+
+.h2-golden-nounderline {
+    border-bottom: none;
+}
+
+h3 {
+    color: var(--darkblue);
+}
+
+a {
+    text-decoration: none;
+    text-transform: none;
+}
+
+a:hover {
+    color: var(--golden);
+}
+
+.a-right {
+    color: var(--golden);
+    border-bottom: none;
+}
+
+p {
+    color: white;
+}
+
+.p-dark {
+    color: var(--darkblue);
+}
+
+.p-bold {
+    font-weight: 600;
+    margin-right: 5px;
+}
+
+// Contariners 
+.h1-container-left {
+    background-color: white;
+    border-radius: 0 10px 10px 0;
+    padding: 10px 15px 10px 50px;
+    max-width: fit-content;
+}
+
+.h1-container-right {
+    position: static;
+    right: 0;
+    margin-left: auto;
+    background-color: white;
+    border-radius: 10px 0 0 10px;
+    padding: 0 0 5px 15px;
+    max-width: 60%;
+    max-height: 70%;
+}
+
+.p-container-blue {
+    background-color: var(--blue);
+    width: fit-content;
+    padding: 5px 10px;
+    margin-left: auto;
+    right: 0;
+}
+
+.container-read-more {
+    justify-content: flex-end;
+    align-items: baseline;
+}
+
+.container-right {
+    position: static;
+    right: 0;
+    margin-left: 15px;
+    background-color: white;
+    border-radius: 10px 0 0 10px;
+    padding: 5px 30px 5px 15px;
+    max-width: 100%;
+    max-height: 70%;
+}
+
+// Display
+.inline {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.inline-read-more {
+    display: inline-flex;
+    flex-flow: row nowrap;
+}
+
+.banner-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "logo"
+    "heading";
+    grid-row-gap: 8px;
+}
+
+.logo-grid {
+    grid-area: logo;
+}
+
+.heading-grid {
+    grid-area: heading;
+}
+
+// Gradients
+.gradient-gold {
+    background-image: linear-gradient(var(--yellow), var(--gold-gr))
+}
+
+.gradient-blue {
+    background-image: linear-gradient(var(--blue), var(--blue-gr))
+}
+
+.gradient-white {
+    background-image: linear-gradient(var(--white-gr), var(--grey-gr));
+}
+
+// Navigation
+.navbar-grid {
+    padding: 15px;
+    grid-template-columns: 14fr 2fr 1fr;
+    grid-template-rows: auto;
+}
+
+.h2-nav {
+    color: white;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.h5-nav{
+    color: var(--darkblue);
+}
+
+#navbarSupportedContent {
+    background-color: var(--darkblue);
+}
+
+.ed-button {
+    background-color: var(--yellow);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 15px 0;
+}
+
+.ed-button:hover {
+  color: white;
+}
+
+
+// Footer 
+footer {
+    background-color: black;
+    padding: 50px;
+    align-items: center;
+}
+
+.footer-link {
+    display: flex;
+    text-decoration: none;
+}
+
+.footer-link > h5 {
+    color: white;
+}
+
+.icon-size {
+   height: 30px;
+   width: 30px;
+}
+
+.footer-logo {
+    height: 50%;
+}
+
+//Index page 
+.news-card {
+    margin-top: 15px;
+}
+
+.card {
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 0;
+    padding: 8px;
+    margin-left: 8px;
+    border-color: var(--golden);
+}
+
+.admission-black {
+    color: black;
+}
+
+.inline-flex-admission {
+    justify-content: evenly;
+
+}
+
+.linkpanel-yellow {
+    padding: 8px 15px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+// Info page
+.section-white {
+    background-color: white;
+    padding: 0 30px 30px 30px;
+}
+
+.container-yellow {
+    background-color: var(--yellow);
+    color: var(--darkblue);
+    border-radius: 10px;
+    padding: 80px 30px 30px 30px;
+}
+
+.line {
+    border-left: solid var(--golden) 1px;
+    padding: 8px;
+    margin-left: 8px;
+}
+
+.p-margin {
+    margin: 0 15px 0 15px;
+}
+
+.ranking-position {
+    position: relative;
+    top: 70;
+}
+
+
+// Staff page
+.staff-grid {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 15px;
+}
+
+.img-150 {
+    width: 150px;
+}
+
+.paginetion-container {
+    padding: 25px 30px;
+}
+
+.pagination {
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.pagination-numbers {
+    color: var(--darkblue);
+}
+
+.active {
+    color: var(--golden);
+}
+
+.left-arrow {
+    rotate: 180deg;
+}
+
+//Gallery page 
+.gallery-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.linkpanel-white {
+    color: #151E2A;
+    padding: 15px 30px;
+    justify-content: space-between;
+}
+
+.linkpanel-white-spacing {
+    margin-bottom: 5px;
+}
+
+.linkpanel-blue {
+    padding: 25px 30px;
+    margin: 30px 0 15px 0;
+    justify-content: center;
+}
+
+.linkpanel {
+    padding: 25px 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.linkpanel-blue-spacing {
+    margin: 0 15px 0 5px;
+}
+
+.img-size {
+   width: 100px;
+}
+
+.modal-close-button {
+    padding: 5px;
+}
+
+// Annoucments 
+
+.card-announcments {
+    border-left: 1px solid var(--golden);
+    padding-left: 8px;
+    background-color: var(--darkblue);
+}
+
+.img-announcments {
+    object-fit: contain;
+    width: 50%;
+    height: auto;
+    margin-right: 8px;
+}

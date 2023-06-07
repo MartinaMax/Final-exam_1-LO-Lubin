@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Staff</title>
+
+    <link rel="stylesheet" href="../scss/custom.scss">
+    
+    <script type="module" src="../js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/netlify-auth-providers"></script>
+</head>
+<body>
+  <!-- Navigation -->
+    <nav class="navbar bg-black navbar-expand-lg py-0">
+      <div class="navbar-grid d-grid">
+        <a href="/index.html">
+          <img src="../assets/svg/home.svg" alt="Home icon" class="icon-size">        
+        </a>
+  
+        <img src="../assets/svg/search.svg" alt="Search icon" class="icon-size">
+        
+        <a data-toggle="collapse" data-target="#navbarSupportedContent"   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="../assets/svg/menu.svg" alt="Burger menu icon" class="icon-size">
+        </a>
+      </div>
+
+        <div class="collapse navbar-collapse pt-4 pb-5" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <div class="nav-link d-flex px-5 px-md-2" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <h2 class="text-uppercase h2-nav">About</h2>
+                <img src="../assets/svg/arrow-white.svg" alt="Arrow icon"> 
+              </div>
+              <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item px-5" href="./info.html"><h5 class="text-uppercase h5-nav">About I LO</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Staff</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Legal</h5></a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="nav-link d-flex px-5 px-md-2" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <h2 class="text-uppercase h2-nav">Activities</h2>
+                <img src="../assets/svg/arrow-white.svg" alt="Arrow icon"> 
+              </div>
+              <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Heart global</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Kopernik run</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Kopernik olympics</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Culture days</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Student exchange</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Teacher days</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Superklasa</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Other events</h5></a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="nav-link d-flex px-5 px-md-2" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <h2 class="h2-nav text-uppercase">Info</h2>
+                <img src="../assets/svg/arrow-white.svg" alt="Arrow icon"> 
+              </div>
+              <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Files</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Council</h5></a> 
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 px-md-2" href="./gallery.html"><h2 class="text-uppercase h2-nav">Gallery</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 px-md-2" href="#"><h2 class="text-uppercase h2-nav">Archive</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 px-md-2" href="./announcements.html"><h2 class="text-uppercase h2-nav">Announcements</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 px-md-2" href="./contact.html"><h2 class="text-uppercase h2-nav">Contact</h2></a>
+            </li>
+          </ul>
+          <div class="mt-4 px-5 text-center">
+            <a class="col-12 ed-button text-uppercase" type="button" aria-pressed="true" href="https://uonetplus.vulcan.net.pl/powiatlubinski">e-dziennik</a>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Main -->
+      <main>
+      <!-- Banner -->
+        <section>
+          <div class="margin-classic margin-b-15"> 
+              <img src="../assets/svg/logo.svg" alt="1 Lo logo">
+          </div>
+        </section>
+
+      <!-- Page indicator/name -->
+        <div class="h1-container-left">
+          <h1 class="text-uppercase h1-gold mb-0">Our staff</h1>
+        </div>
+
+      <!-- Staff section -->
+        <section>
+          <article class="margin-bigger margin-t-b">
+            <ul class="staff-page" id="staff-page-1"></ul>
+            <ul class="staff-page" id="staff-page-2"></ul>
+            <ul class="staff-page" id="staff-page-3"></ul>
+            <ul class="staff-page" id="staff-page-4"></ul>
+          </article>
+
+          <article class="paginetion-container gradient-white">
+            <nav> 
+            <ul class="pagination mb-0">
+                <li class=" page-prev">
+                    <a href="#" aria-label="Previous">
+                      <img src="../assets/svg/arrow-gold.svg" alt="Left arrow button" aria-hidden="true" class="left-arrow">
+                    </a>
+                </li>
+                <li class="page-next">
+                    <a href="#" aria-label="Next">
+                      <img src="../assets/svg/arrow-gold.svg" alt="Right arrow button" aria-hidden="true">
+                    </a>
+                </li>
+            </ul>
+            </nav>
+          </article>
+        </section>
+
+      <!-- Staff section pagination -->
+      </main>
+
+    <!-- Footer -->
+      <footer>
+
+      <!-- Footer logo-->
+      <a href="#navbar">
+        <img src="../assets/svg/logo.svg" alt="1 Lo logo" class="margin-b-15 footer-logo">
+      </a>
+        
+        <div>
+          <!-- Facebook link -->
+          <a class="footer-link mb-3" href="https://www.facebook.com/profile.php?id=100063681666463">
+            <img class="col icon-size" src="../assets/svg/facebook.svg" alt="Facebook icon">
+            <h5 class="col-10">I Liceum Ogólnokształcące im. Mikołaja Kopernika w Lubinie</h5>
+          </a>
+        
+        <!-- Instagram link -->
+          <a class=" footer-link mb-3" href="https://www.instagram.com/1lolubin/">
+            <img class="col icon-size" src="../assets/svg/instagram.svg" alt="Instagram icon">
+            <h5 class="col-10">@1lolubin</h5>
+          </a>
+  
+        <!-- TikTok link -->
+          <a class=" footer-link mb-3" href="https://www.tiktok.com/@1lolubin?lang=en">
+            <img class="col icon-size" src="../assets/svg/tiktok.svg" alt="TikTok icon">
+            <h5 class="col-10">@1lolubin</h5>
+          </a>
+  
+        <!-- Phone number-->
+          <div class="footer-link mb-3">
+            <img class="col icon-size" src="../assets/svg/phone.svg" alt="Phone icon">
+            <h5 class="col-10">76 746 06 70</h5>
+          </div>
+          
+        <!-- Mail link -->
+          <div class="footer-link">
+            <img class="col icon-size" src="../assets/svg/post.svg" alt="Envelope icon">
+            <h5 class="col-10">1lo@1lo.lubin.pl</h5>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+    $( document ).ready(function() { 
+    
+    pageSize = 1;
+    pagesCount = $(".staff-page").length;
+    var currentPage = 1;
+    
+    var nav = '';
+    var totalPages = Math.ceil(pagesCount / pageSize);
+    for (var s=0; s<totalPages; s++){
+        nav += '<li><a class="pagination-numbers text-bold numbers" href="#">'+(s+1)+'</a></li>';
+    }
+    $(".page-prev").after(nav);
+    $(".numbers").first().addClass("active");
+
+    showPage = function() {
+        $(".staff-page").hide().each(function(n) {
+            if (n >= pageSize * (currentPage - 1) && n < pageSize * currentPage)
+                $(this).show();
+        });
+    }
+    showPage();
+
+
+    $(".pagination a.numbers").click(function() {
+        $(".pagination a").removeClass("active");
+        $(this).addClass("active");
+        currentPage = parseInt($(this).text());
+        showPage();
+    });
+
+    $(".pagination li.page-prev").click(function() {
+        if($(this).next().is('.active')) return;
+        $('.numbers .active').removeClass('active').prev().addClass('active');
+        $(this).addClass("active");
+        currentPage = currentPage > 1 ? (currentPage-1) : 1;
+        showPage();
+    });
+
+    $(".pagination li.page-next").click(function() {
+        if($(this).prev().is('.active')) return;
+        $('.numbers .active ').removeClass('active').next().addClass('active');
+        currentPage = currentPage < totalPages ? (currentPage+1) : totalPages;
+        showPage();
+    });
+});
+    </script>
+</body>
+</html>

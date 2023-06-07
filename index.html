@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="./src/scss/custom.scss">
+    
+    <script type="module" src="./src/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+  <!-- Navigation -->
+    <nav class="navbar bg-black navbar-expand-lg py-0" id="navbar">
+      <div class="navbar-grid d-grid">
+          <a href="index.html">
+            <img src="./src/assets/svg/home.svg" alt="Home icon" class="icon-size">        
+          </a>
+  
+          <img src="./src/assets/svg/search.svg" alt="Search icon" class="icon-size">
+          
+          <a data-toggle="collapse" data-target="#navbarSupportedContent"   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./src/assets/svg/menu.svg" alt="Burger menu icon" class="icon-size">
+          </a>
+      </div>
+
+        <div class="collapse navbar-collapse pt-4 pb-5" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <div class="nav-link d-flex px-5 px-md-2" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <h2 class="text-uppercase h2-nav">About</h2>
+                <img src="./src/assets/svg/arrow-white.svg" alt="Arrow icon"> 
+              </div>
+              <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item px-5" href="./src/html/info.html"><h5 class="text-uppercase h5-nav">About I LO</h5></a>
+                <a class="dropdown-item px-5" href="./src/html/staff.html"><h5 class="text-uppercase h5-nav">Staff</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Legal</h5></a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="nav-link d-flex px-5 px-md-2"id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <h2 class="text-uppercase h2-nav">Activities</h2>
+                <img src="./src/assets/svg/arrow-white.svg" alt="Arrow icon">
+              </div>
+              <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Heart global</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Kopernik run</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Kopernik olympics</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Culture days</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Student exchange</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Teacher days</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Superklasa</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Other events</h5></a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="nav-link d-flex px-5 px-md-2" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <h2 class="text-uppercase h2-nav">Info</h2>
+                <img src="./src/assets/svg/arrow-white.svg" alt="Arrow icon">
+              </div>
+              <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Files</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Council</h5></a> 
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 px-md-2" href="./src/html/gallery.html"><h2 class="text-uppercase h2-nav">Gallery</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 px-md-2" href="#"><h2 class="text-uppercase h2-nav">Archive</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 px-md-2" href="./src/html/announcements.html"><h2 class="text-uppercase h2-nav">Announcements</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 px-md-2" href="./src/html/contact.html"><h2 class="text-uppercase h2-nav">Contact</h2></a>
+            </li>
+          </ul>
+          <div class="mt-4 px-5 text-center">
+            <a class="col-12 ed-button text-uppercase" type="button" aria-pressed="true" href="https://uonetplus.vulcan.net.pl/powiatlubinski">e-dziennik</a>
+          </div>
+        </div>
+    </nav>
+
+  <!-- Main -->
+    <main>
+    <!-- Banner -->
+      <section>
+        <div class="margin-classic banner-grid"> 
+          <img src="./src/assets/svg/logo.svg" alt="1 Lo logo">
+          <h1 class="h1-white heading-grid"><span class="fw-bold text-uppercase">I liceum Ogólnokształcace</span></br> im. Mikołaja Kopernika w Lubinie</h1>
+        </div>
+
+      <!-- Event announcement -->
+        <div class="h1-container-right margin-b-15">
+          <div class="inline">
+            <h2 class="heading-golden h2-golden-nounderline">26.05.23</h2>
+            <p class="text-uppercase p-container-blue">Event</p>
+          </div>
+          <h3 class="fw-bold text-uppercase">Open day in Copernicus!</h3>
+          <p class="p-dark">We invite our younger friends and colleagues to close meetings with Copernicus</p>
+        </div>
+      </section>
+
+    <!-- News feed -->
+      <section>
+        <h1 class="text-uppercase h1-white-left">News</h1>
+        <div class="container-right">
+          <div class="news-card">
+            <h2 class="heading-golden h2-golden-underline">19.05.2023</h2> 
+            <h3>Team Copernicus at Predator Games 2023!</h3>
+            <p class="p-dark margin-b">On March 31 - April 27, 2023, the representation of our school took part in 
+              the National Predator Games 2023 Competition. 
+              The competition was held online and consisted of 4 games: 
+              League of Legends, Rocket League, Chess and Fortnite.</p>
+            <div class="inline-read-more">
+              <div class="container-read-more">
+                <a href="#multiCollapseExample1" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" class="a-right">
+                  Read more
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="30"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" fill="#A68B30"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                <p class="p-dark">
+                  The representatives of our school in individual games were : 
+                  Wojciech Bąk 2A, Kacper Mikita 2B, Paweł Kanigowski 2B, Szymon Majerczak 3A, Filip Kozyra 3A, Michał Grygielski 3B (League of Legends), 
+                  Przemysław Mazurowski 3A, Michał Wojtanowski 3A, Rafał Raś 3A, Hubert Żelewski 3B (Rocket League), Bartholomew Rog 1E, Kacper Werner 4A (Chess), Jakub Ochocki 1B, Bartosz Drążek 2B, Konrad Kozicki 2B, Igor Jakubowski 2C (Fortnite), The greatest success is Bartek Róg , who took 15th place in chess out of 1024 starters!!!
+                  Congratulations to Bartek and the other students and we wish you success in the next year.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-card">
+            <h2 class="heading-golden h2-golden-underline">03.05.2023</h2> 
+            <h3>Graduation 2023 - GOOD LUCK!!!</h3>
+            <p class="p-dark margin-b">The wonderful May weekend is slowly coming to an end... For most of us, it's a very relaxing three days, but for fresh graduates, it's a stressful time...
+              <br>Dear Seniors!!!
+              <br>We hope you have rested and have a supply of energy for the next few days! You have an important exam ahead of you, but you are definitely ready and we suggest you prepare a few things now, so as not to be unnecessarily stressed tomorrow morning!
+              First of all, set your alarm clocks and be at school with an adequate supply -  30 minutes. before the exam  is really a very good time!!! 
+              You don't come to the designated rooms at the last minute - remember that after drawing a place and leaving your belongings (then there is time to check if you have everything :), you can still leave the room / hall.
+             
+            </p>
+            <div class="inline-read-more">
+              <div class="container-read-more">
+                <a href="#multiCollapseExample2" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2" class="a-right">
+                  Read more
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="30"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" fill="#A68B30"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <div class="card card-body">
+                <p class="p-dark">
+                You will get BAR CODES  tomorrow - keep an eye on it!
+                <br>
+                <br>Pack your essentials today:
+                <p>  
+                <ul>
+                    <li>stock of black pens,</li>
+                    <li>ID card (also great for cutting the sheet :),</li>
+                    <li>a little still water,</li>
+                    <li>tissues:)</li>
+                </ul>
+                <p class="p-dark">
+                  Don't pack pencils, erasers, erased pens - that is, everything you can't use on your final exam anyway!
+                  PHONES (AND OTHER SMART DEVICES) ARE NOT ALLOWED
+                  And as you know, life is not fair... For some it is the beginning of a stressful exam marathon, for others it is a blissful break!!! For students of classes I - III,  May is in the best and  until May 9th !
+                  What does the baccalaureate schedule look like this year and until when do we keep our fingers crossed?!
+                  Oral exams are held according to a fixed schedule (boards on the ground floor) from 10 am to 23 May.
+                <br>
+                <br>Written exams schedule 2023:
+                <br>May 4 (Thursday):
+                </p>
+                <ul>
+                  <li>time. 9.00 - Polish language (basic level).</li>
+                </ul>
+                <p>May 5 (Friday):</p>
+                <ul>
+                  <li>time. 9.00 - English (basic level),</li>
+                  <li>time. 14.00 - German (basic level).</li>
+                </ul>
+                <p>May 8 (Monday):</p>
+                <ul>
+                  <li>time. 9.00 - mathematics (basic level).</li>
+                </ul>
+                <p>May 9 (Tuesday):</p>
+                <ul>
+                  <li>time. 9.00 - English (extended and bilingual level).</li>
+                </ul>
+                <p>May 10 (Wednesday):</p>
+                <ul>
+                  <li>time. 9.00 – WOS (extended level),</li>
+                  <li>time. 14.00 – German (extended and bilingual level).</li>
+                </ul>
+                <p>May 11 (Thursday):</p>
+                <ul>
+                  <li>time. 9.00 – biology (advanced level),</li>
+                  <li>time. 14.00 - French (advanced level).</li>
+                </ul>
+                <p>May 12 (Friday):</p>
+                <ul>
+                  <li>time. 9.00 – mathematics (advanced level),</li>
+                  <li>time. 14.00 - French (advanced level).</li>
+                </ul>
+                <p>May 15 (Monday):</p>
+                <ul>
+                  <li>time. 9.00 – chemistry (advanced level).</li>
+                </ul>
+                <p>May 16 (Tuesday)</p>
+                <ul>
+                  <li>time. 9.00 – geography (advanced level).</li>
+                </ul>
+                <p>May 17 (Wednesday):</p>
+                <ul>
+                  <li>time. 9.00 - Polish language (advanced level).</li>
+                </ul>
+                <p>May 18 (Thursday):</p>
+                <ul>
+                  <li>time. 9.00 – history (extended level).</li>
+                </ul>
+                <p>May 19 (Friday):</p>
+                <ul>
+                  <li>time. 9.00 - physics (advanced level),</li>
+                  <li>time. 14.00 - history of art (advanced level).</li>
+                </ul>
+                <p>May 22 (Monday):</p>
+                <ul>
+                  <li>time. 9.00 - computer science (advanced level),</li>
+                  <li>time. 14.00 - Spanish (advanced level).</li>
+                </ul>
+                <br>
+                <br>WE KEEP FINGERS!!! GOOD LUCK!!!
+              </div>
+            </div> 
+          </div>
+
+          <div class="news-card margib-b-15">
+            <h2 class="heading-golden h2-golden-underline">03.05.2023</h2> 
+            <h3>Constitution Day May 3</h3>
+            <p class="p-dark margin-b">This year marks the 232nd anniversary of the adoption of the Constitution of May 3 - the first written constitution in Europe and the second in the world (after the US Constitution). The holiday was established in 1919 and then again in 1990.</p>
+            <div class="inline-read-more">
+              <div class="container-read-more">
+                <a href="#multiCollapseExample3" data-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3" class="a-right">
+                  Read more
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="30"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" fill="#A68B30"/></svg>
+                </a>
+              </div>
+            </div>
+            <div class="collapse multi-collapse" id="multiCollapseExample3">
+              <div class="card card-body">
+                The Constitution Day on May 3 commemorates the creation of the first Polish law that regulated the system of the Republic of Poland. It was the second such document in Europe and the third in the world. The act changed the state system into a hereditary monarchy and led to the political equalization of townspeople and nobility. It also introduced the protection of the state over peasants, which was supposed to mitigate abuses in the collection of serfdom. Under the Constitution, power was divided into legislative, executive and judiciary.  
+              </div>
+            </div>
+          </div>
+
+          <!-- Links panel to announcment page-->
+          <a class="d-flex" href="./src/html/announcements.html">
+            <h2 class="heading-golden h2-golden-underline">see all announcements</h2>
+            <img class="icon-size" src="./src/assets/svg/arrow-gold.svg" alt="">
+          </a>
+        </div>
+      </section>
+
+      <!-- Links panel to recruitment portal page-->
+      <article>
+        <a href="#" class="linkpanel-yellow d-flex gradient-gold">
+          <div class="d-inline-flex align-items-baseline">
+            <h6 class="text-uppercase mb-0 admission-black">Want to join us?</h6>
+            <h5 class="text-uppercase mb-0 admission-black linkpanel-blue-spacing">Admission 2023/2024</h5>
+          </div>
+          <img src="./src/assets/svg/arrow-gold.svg" alt="Arrow icon">
+        </a>
+      </article>
+    </main>
+
+  <!-- Footer -->
+    <footer>
+      <a href="#navbar">
+        <img src="./src/assets/svg/logo.svg" alt="1 Lo logo" class="margin-b-15 footer-logo">
+      </a>
+      <div>
+       
+      <!-- Facebook link -->
+        <a class="footer-link mb-3" href="https://www.facebook.com/profile.php?id=100063681666463">
+          <img class="col icon-size" src="./src/assets/svg/facebook.svg" alt="Facebook icon">
+          <h5 class="col-10">I Liceum Ogólnokształcące im. Mikołaja Kopernika w Lubinie</h5>
+        </a>
+      
+      <!-- Instagram link -->
+        <a class=" footer-link mb-3" href="https://www.instagram.com/1lolubin/">
+          <img class="col icon-size" src="./src/assets/svg/instagram.svg" alt="Instagram icon">
+          <h5 class="col-10">@1lolubin</h5>
+        </a>
+
+      <!-- TikTok link -->
+        <a class=" footer-link mb-3" href="https://www.tiktok.com/@1lolubin?lang=en">
+          <img class="col icon-size" src="./src/assets/svg/tiktok.svg" alt="TikTok icon">
+          <h5 class="col-10">@1lolubin</h5>
+        </a>
+
+      <!-- Phone number -->
+        <div class="footer-link mb-3" href="">
+          <img class="col icon-size" src="./src/assets/svg/phone.svg" alt="Phone icon">
+          <h5 class="col-10">76 746 06 70</h5>
+        </div>
+      
+       <!-- Mail link --> 
+        <div class="footer-link" href="">
+          <img class="col icon-size" src="./src/assets/svg/post.svg" alt="Envelope icon">
+          <h5 class="col-10">1lo@1lo.lubin.pl</h5>
+        </div>
+      </div>
+    </footer>
+    
+  </body>
+</html> 
+
+
+<!-- Refrences 
+    Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.
+-->

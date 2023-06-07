@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Announcements</title>
+
+        <link rel="stylesheet" href="../scss/custom.scss">
+        
+        <script type="module" src="../js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+    <!-- Navigation -->
+      <nav class="navbar bg-black navbar-expand-lg py-0">
+        <div class="navbar-grid d-grid">
+            <a href="/index.html">
+              <img src="../assets/svg/home.svg" alt="Home icon" class="icon-size">        
+            </a>
+    
+            <img src="../assets/svg/search.svg" alt="Search icon" class="icon-size">
+            
+            <a data-toggle="collapse" data-target="#navbarSupportedContent"  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <img src="../assets/svg/menu.svg" alt="Burger menu icon" class="icon-size">
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse pt-4 pb-5" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <div class="nav-link d-flex px-5 px-md-2" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <h2 class="text-uppercase h2-nav">About</h2>
+                <img src="../assets/svg/arrow-white.svg" alt="Arrow icon"> 
+              </div>
+              <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item px-5" href="../html/info.html"><h5 class="text-uppercase h5-nav">About I LO</h5></a>
+                <a class="dropdown-item px-5" href="../html/staff.html"><h5 class="text-uppercase h5-nav">Staff</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Legal</h5></a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="nav-link d-flex px-5 px-md-2" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <h2 class="text-uppercase h2-nav">Activities</h2>
+                <img src="../assets/svg/arrow-white.svg" alt="Arrow icon">
+              </div>
+              <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Heart global</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Kopernik run</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Kopernik olympics</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Culture days</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Student exchange</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Teacher days</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Superklasa</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Other events</h5></a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <div class="nav-link d-flex px-5 px-md-2" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <h2 class="text-uppercase h2-nav">Info</h2>
+                <img src="../assets/svg/arrow-white.svg" alt="Arrow icon">
+              </div>
+              <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Files</h5></a>
+                <a class="dropdown-item px-5" href="#"><h5 class="text-uppercase h5-nav">Council</h5></a> 
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 px-md-2" href="../html/gallery.html"><h2 class="text-uppercase h2-nav">Gallery</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 px-md-2" href="#"><h2 class="text-uppercase h2-nav">Archive</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 px-md-2" href="#"><h2 class="text-uppercase h2-nav">Announcements</h2></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link px-5 px-md-2" href="../html/contact.html"><h2 class="text-uppercase h2-nav">Contact</h2></a>
+            </li>
+          </ul>
+          <div class="mt-4 px-5 text-center">
+            <a class="col-12 ed-button text-uppercase" type="button" aria-pressed="true" href="https://uonetplus.vulcan.net.pl/powiatlubinski">e-dziennik</a>
+          </div>
+        </div>
+        </nav>
+
+      <!-- Main -->
+        <main>
+            <!-- Banner -->
+            <section>
+                <div class="margin-classic margin-b-15"> 
+                    <img src="../assets/svg/logo.svg" alt="1 Lo logo">
+                </div>
+            </section>
+
+          <!-- Page indicator/name -->
+            <div class="h1-container-left">
+                <h1 class="text-uppercase h1-gold mb-0">Announcements</h1>
+            </div>
+          <!-- News Feed -->
+            <div class="news-card row body-padding margin-b-15">
+              <div class="inline margin-b">
+                <img src="../assets/img/Plakat.png" alt="Predator Games Team" class="col img-announcments">
+                <div class="col">
+                  <h2 class="heading-golden h2-golden-underline">23.05.2023</h2> 
+                  <h3 class="heading-white">Doors Open in Copernicus!!</h3>
+                  <p class="margin-b">Already on May 26,  we invite our younger friends and colleagues to close meetings with Copernicus :) </p>
+                  <div class="inline-read-more">
+                  <div class="container-read-more">
+                      <a href="#multiCollapseExample1" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1" class="a-right">
+                        Read more
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="30"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" fill="#A68B30"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+                </div>
+                <div class="row body-padding">
+                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                        <div class="card-announcments card-body">
+                          <p>
+                            The Open Doors  start at 13.00 and, as usual, Copernicus in a nutshell is waiting for you :)
+                            Eighth graders will have completed their tests, so there's no better way to start the weekend! All those who are going to visit us are invited first to our hall on the second floor :)
+                            We are waiting for you, and for now we keep our fingers crossed for exams!!!
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="news-card row body-padding">
+              <div class="inline .margin-b">
+                <img src="../assets/img/Predator games.jpg" alt="Predator Games Team" class="col img-announcments">
+                <div class="col">
+                  <h2 class="heading-golden h2-golden-underline">19.05.2023</h2> 
+                  <h3 class="heading-white">Team Copernicus at Predator Games 2023!</h3>
+                  <p class="margin-b">On March 31 - April 27, 2023, the representation of our school took part in 
+                    the National Predator Games 2023 Competition. 
+                    The competition was held online and consisted of 4 games: 
+                    League of Legends, Rocket League, Chess and Fortnite.</p>
+                  <div class="inline-read-more">
+                  <div class="container-read-more">
+                      <a href="#multiCollapseExample2" data-toggle="collapse" href="#multiCollapseExample2" role="button" aria-expanded="false" aria-controls="multiCollapseExample2" class="a-right">
+                        Read more
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="30"><path d="m304-82-56-57 343-343-343-343 56-57 400 400L304-82Z" fill="#A68B30"/></svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+                </div>
+                <div class="row body-padding padding-b">
+                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                        <div class="card-announcments card-body">
+                          <p>
+                            The representatives of our school in individual games were : 
+                            Wojciech Bąk 2A, Kacper Mikita 2B, Paweł Kanigowski 2B, Szymon Majerczak 3A, Filip Kozyra 3A, Michał Grygielski 3B (League of Legends), 
+                            Przemysław Mazurowski 3A, Michał Wojtanowski 3A, Rafał Raś 3A, Hubert Żelewski 3B (Rocket League), Bartholomew Rog 1E, Kacper Werner 4A (Chess), Jakub Ochocki 1B, Bartosz Drążek 2B, Konrad Kozicki 2B, Igor Jakubowski 2C (Fortnite), The greatest success is Bartek Róg , who took 15th place in chess out of 1024 starters!!!
+                            Congratulations to Bartek and the other students and we wish you success in the next year.
+                          </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+        </main>
+
+    <!-- Footer -->
+      <footer>
+
+        <!-- Footer logo-->
+        <a href="#navbar">
+          <img src="../assets/svg/logo.svg" alt="1 Lo logo" class="margin-b-15 footer-logo">
+        </a>
+          
+          <div>
+            <!-- Facebook link -->
+            <a class="footer-link mb-3" href="https://www.facebook.com/profile.php?id=100063681666463">
+              <img class="col icon-size" src="../assets/svg/facebook.svg" alt="Facebook icon">
+              <h5 class="col-10">I Liceum Ogólnokształcące im. Mikołaja Kopernika w Lubinie</h5>
+            </a>
+          
+          <!-- Instagram link -->
+            <a class=" footer-link mb-3" href="https://www.instagram.com/1lolubin/">
+              <img class="col icon-size" src="../assets/svg/instagram.svg" alt="Instagram icon">
+              <h5 class="col-10">@1lolubin</h5>
+            </a>
+    
+          <!-- TikTok link -->
+            <a class=" footer-link mb-3" href="https://www.tiktok.com/@1lolubin?lang=en">
+              <img class="col icon-size" src="../assets/svg/tiktok.svg" alt="TikTok icon">
+              <h5 class="col-10">@1lolubin</h5>
+            </a>
+    
+          <!-- Phone number-->
+            <div class="footer-link mb-3">
+              <img class="col icon-size" src="../assets/svg/phone.svg" alt="Phone icon">
+              <h5 class="col-10">76 746 06 70</h5>
+            </div>
+            
+          <!-- Mail link -->
+            <div class="footer-link">
+              <img class="col icon-size" src="../assets/svg/post.svg" alt="Envelope icon">
+              <h5 class="col-10">1lo@1lo.lubin.pl</h5>
+            </div>
+          </div>
+        </footer>
+    </body>
+</html>
